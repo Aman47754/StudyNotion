@@ -1,14 +1,20 @@
-const mongoose=require('mongoose');
+const mongoose = require("mongoose")
 
-const CourseProgressSchema= new mongoose.Schema({
-    CourseId:{
-        type:mongoose.Schema.Types.ObjectId,
+const courseProgress = new mongoose.Schema({
+  courseID: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Course",
+  },
+  userId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "user",
+  },
+  completedVideos: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "SubSection",
     },
-    CompletedVideos:[{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"SubSection"
-    }],
-    
+  ],
 })
 
-models.exports =mongoose.model('CourseProgress',CourseProgressSchema);
+module.exports = mongoose.model("courseProgress", courseProgress)
