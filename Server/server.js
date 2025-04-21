@@ -23,7 +23,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"http://localhost:3000","https://vercel.com/aman-kumar-vermas-projects-88dd7330/study-notion-dgtr/2St9BzxRTj73g82VMXJQUbhzizaq",
+		origin:["http://localhost:3000",
+			"https://vercel.com/aman-kumar-vermas-projects-88dd7330/study-notion-dgtr/2St9BzxRTj73g82VMXJQUbhzizaq"],
 		credentials:true,
 	})
 )
