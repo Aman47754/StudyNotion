@@ -25,7 +25,7 @@ app.use(
 	cors({
 		origin: [
 				"http://localhost:3000",
-				"https://study-notion-dgtr-1ile6nx4j.vercel.app"
+				"https://study-notion-dgtr.vercel.app"
 			  ],
 
 		credentials:true,
