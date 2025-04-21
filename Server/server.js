@@ -24,9 +24,9 @@ app.use(cookieParser());
 app.use(
 	cors({
 		origin: [
-  "http://localhost:3000",
-  "https://study-notion-dgtr-b5zbqsxne-aman-kumar-vermas-projects-88dd7330.vercel.app"
-],
+				"http://localhost:3000",
+				"https://study-notion-dgtr-1ile6nx4j.vercel.app"
+			  ],
 
 		credentials:true,
 	})
